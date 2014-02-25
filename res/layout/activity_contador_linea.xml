@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ContadorLineaActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/NumeroLineaTextView"
+                style="@style/TituloLinea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Línea número" />
+
+            <EditText
+                android:id="@+id/numeroTelefonoEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Número telefónico con lada"
+                android:inputType="phone"
+                android:textColor="@color/ColorEditText"
+                android:textColorHint="@color/ColorEditText" />
+
+            <Chronometer
+                android:id="@+id/ContadorTiempoChron"
+                style="@style/TituloLinea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chronometer"
+                android:textSize="42sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TipoLlamadaTextView"
+                    style="@style/TextosGenericos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Importe a pagar:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/importePagarTextView"
+                    style="@style/TextosGenericos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="28sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/iniciarContadorBtn"
+                    style="@style/BotonAzulVerde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Iniciar" />
+
+                <Button
+                    android:id="@+id/detenerContadorBtn"
+                    style="@style/BotonAzulVerde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Detener"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/reiniciarBtn"
+                    style="@style/BotonGenerico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reiniciar"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

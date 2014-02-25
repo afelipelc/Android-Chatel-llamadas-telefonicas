@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx.afelipe.chatel.utils.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1">
+	<!--  Lineas -->
+
+    <Button
+        android:id="@+id/btn_lineas"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/list"
+        android:minHeight="64dp"
+        android:text="Líneas" />
+    
+    	<!--  Historial -->
+
+    <Button
+        android:id="@+id/btn_registros"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/korganizer"
+        android:minHeight="64dp"
+        android:text="Registros" />
+
+	<!--  reportes -->
+
+    <Button
+        android:id="@+id/btn_reportes"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/emblem_money"
+        android:minHeight="64dp"
+        android:text="Reportes" />
+    
+        <Button
+        android:id="@+id/btn_configuracion"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/settings"
+        android:minHeight="64dp"
+        android:text="Configuración" />
+
+</mx.afelipe.chatel.utils.DashboardLayout>

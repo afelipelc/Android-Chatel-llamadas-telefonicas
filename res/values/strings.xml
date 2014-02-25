@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chatel</string>
+    <string name="action_settings">Configuración</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_lineas">Registro de llamada</string>
+    <string name="title_activity_contador_linea">Registro de llamada</string>
+    <string name="title_activity_tarifas">Establecer Tarifas</string>
+    <string name="title_activity_reportes">Reportes</string>
+
+</resources>
